@@ -689,26 +689,27 @@
   <script src="assets/js/jquery.min.js"></script>
 
   <!-- Contact-Form -->
+  [html]
   <script>
-      $("#contact-form").submit(function(e) {
-        let name = $('#name').val();
-        let email = $('#email').val();
-        let phone = $('#phone').val();
-        let message = $('#message').val();
-        let string = '';
+    $("#contact-form").submit(function(e) {
+      let name = $('#name').val();
+      let email = $('#email').val();
+      let phone = $('#phone').val();
+      let message = $('#message').val();
+      let string = '';
 
-        string += 'Nombre: ' + name + ' | ';
-        string += 'Correo: ' + email + ' | ';
-        string += 'Teléfono: ' + phone + ' | ';
-        string += 'Mensaje: ' + message + ' ';
+      string += 'Nombre: ' + name + ' | ';
+      string += 'Correo: ' + email + ' | ';
+      string += 'Teléfono: ' + phone + ' | ';
+      string += 'Mensaje: ' + message + ' ';
 
-        $('form :input').val('');
+      $('form :input').val('');
 
-        window.open('https://wa.me/+59165106000?text=' + string, '_blank');
+      window.open('https://wa.me/+59165106000?text=' + string, '_blank');
 
-        e.preventDefault();
-      });
-    </script>
+      e.preventDefault();
+    });
+  </script>
 
     <!-- Calculate AGE -->
     <script>
